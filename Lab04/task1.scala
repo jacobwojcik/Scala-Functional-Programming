@@ -24,3 +24,24 @@ object Main {
     }
   }
 }
+
+// The challenge is to write higher-order functions that transform curried into uncurried and vice versa.
+// You can't use Function.uncurried or curried.  
+// Say we have two functions:
+
+//   def a( x: Int, y: String) {
+//       println("a " + x + " " + y)
+//   }
+//   def b(x:Int)(y:String) {
+//       println("b " + x + " " + y)
+//   }
+// say they have both trivial implementation e.g. print the f name and arguments to the output.
+// The task is to write: 
+
+// val ca = curryIt(a)
+// ca(0)("Hello")
+
+// val ub = uncurryIt(b)
+// ub(0, "Hello")
+
+// Reminder, the function w/o return value (the procedure) is the same as a function returning Unit type.
